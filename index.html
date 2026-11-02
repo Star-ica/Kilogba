@@ -31,7 +31,7 @@ body{font-family:'Outfit',system-ui,sans-serif;background:var(--bg);color:var(--
 
 .screen{display:none;}
 
-/* ══ LANDING ══ */
+/* LANDING */
 #landingScreen{min-height:100vh;flex-direction:column;}
 #landingScreen.active{display:flex;}
 .land-nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;border-bottom:1px solid var(--border);}
@@ -49,7 +49,7 @@ body{font-family:'Outfit',system-ui,sans-serif;background:var(--bg);color:var(--
 .feat-title{font-size:15px;font-weight:600;margin-bottom:5px;}
 .feat-desc{font-size:13px;color:var(--fg2);}
 
-/* ══ MODAL ══ */
+/* MODAL */
 .modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;}
 .modal-backdrop.hidden{display:none;}
 .modal{background:var(--surf);border:1px solid var(--border);border-radius:18px;padding:32px;max-width:480px;width:100%;position:relative;}
@@ -81,7 +81,7 @@ body{font-family:'Outfit',system-ui,sans-serif;background:var(--bg);color:var(--
 .success-box p{font-size:13px;color:var(--fg2);}
 .tx-link{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--hash);word-break:break-all;margin-top:10px;display:block;}
 
-/* ══ APP SHELL ══ */
+/* APP SHELL */
 #appScreen.active{display:flex;flex-direction:column;min-height:100vh;}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--surf);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:12px max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));gap:12px;}
 .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.1rem;}
@@ -95,7 +95,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:va
 .page{display:none;}.page.active{display:block;}
 main{padding:24px max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));padding-bottom:60px;max-width:960px;margin:0 auto;}
 
-/* ══ BUTTONS ══ */
+/* BUTTONS */
 .btn{display:inline-flex;align-items:center;gap:6px;border:none;border-radius:var(--r);cursor:pointer;font-family:inherit;font-weight:500;font-size:14px;padding:8px 16px;transition:opacity .15s,background .15s;white-space:nowrap;}
 .btn:disabled{opacity:.45;cursor:not-allowed;}
 .btn-primary{background:var(--accent);color:#04111e;}
@@ -110,7 +110,7 @@ main{padding:24px max(20px,env(safe-area-inset-left,0px));padding-right:max(20px
 .btn-outline{background:transparent;border:1px solid var(--border);color:var(--fg);}
 .btn-outline:hover:not(:disabled){background:var(--surf2);}
 
-/* ══ DASHBOARD ══ */
+/* DASHBOARD */
 .dash-grid{display:grid;grid-template-columns:300px 1fr;gap:20px;margin-bottom:28px;}
 @media(max-width:680px){.dash-grid{grid-template-columns:1fr;}}
 .profile-card{background:var(--surf);border:1px solid var(--border);border-radius:16px;padding:24px 20px;display:flex;flex-direction:column;align-items:center;gap:14px;position:relative;overflow:hidden;}
@@ -157,7 +157,7 @@ main{padding:24px max(20px,env(safe-area-inset-left,0px));padding-right:max(20px
 .streak-num{font-size:24px;font-weight:800;color:var(--warn);font-family:'JetBrains Mono',monospace;line-height:1;}
 .streak-lbl{font-size:11px;color:var(--fg2);margin-top:2px;}
 
-/* ══ CALC ══ */
+/* CALC */
 .scale-toggle{display:flex;gap:6px;background:var(--surf2);border:1px solid var(--border);border-radius:var(--r);padding:4px;}
 .scale-btn{border:none;border-radius:6px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:500;padding:5px 14px;background:transparent;color:var(--fg2);transition:background .15s,color .15s;}
 .scale-btn.active{background:var(--accent);color:#04111e;}
@@ -183,7 +183,7 @@ tr:last-child td{border-bottom:none;}
 .grade-pill{display:inline-block;border-radius:100px;font-weight:600;font-size:12px;padding:2px 10px;font-family:'JetBrains Mono',monospace;}
 .gp-val{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;}
 
-/* ══ CHAIN ══ */
+/* CHAIN */
 .chain-section{margin-bottom:28px;}
 .chain-section h3{font-size:13px;font-weight:600;color:var(--fg3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;}
 .status-row{display:flex;align-items:center;gap:8px;font-size:14px;}
@@ -208,7 +208,7 @@ tr:last-child td{border-bottom:none;}
 .id-val{font-size:14px;font-weight:600;}
 .id-val-mono{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--hash);}
 
-/* ══ PDF UPLOAD ZONE ══ */
+/* PDF UPLOAD ZONE */
 .upload-zone{border:2px dashed var(--border);border-radius:14px;padding:28px 20px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;margin-bottom:16px;position:relative;}
 .upload-zone:hover,.upload-zone.dragover{border-color:var(--accent);background:var(--accent-bg);}
 .upload-zone input[type=file]{display:none;}
@@ -226,7 +226,7 @@ tr:last-child td{border-bottom:none;}
 .parse-status{font-size:14px;color:var(--fg2);margin-top:6px;}
 .parse-detail{font-size:12px;color:var(--fg3);margin-top:4px;font-family:'JetBrains Mono',monospace;}
 
-/* Preview table for parsed results */
+/* Preview table */
 .parse-preview{background:var(--surf);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-top:16px;display:none;}
 .parse-preview.show{display:block;}
 .parse-preview-head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--surf2);border-bottom:1px solid var(--border);}
@@ -262,7 +262,7 @@ tr:last-child td{border-bottom:none;}
 .reveal{animation:fadeUp .35s ease both;}
 .divider{border:none;border-top:1px solid var(--border);margin:20px 0;}
 
-/* ── LANDING FOOTER ── */
+/* LANDING FOOTER */
 .land-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;padding:20px 32px;border-top:1px solid var(--border);margin-top:auto;}
 .land-footer-left{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
 .land-footer-copy{font-size:12px;color:var(--fg3);}
@@ -271,7 +271,7 @@ tr:last-child td{border-bottom:none;}
 .land-footer-links a:hover{color:var(--accent);}
 </style>
 
-<!-- ══ LANDING ══ -->
+<!-- LANDING -->
 <div id="landingScreen" class="screen active">
   <nav class="land-nav">
     <div class="land-logo">
@@ -298,7 +298,6 @@ tr:last-child td{border-bottom:none;}
     <div class="feat-card"><div class="feat-icon">📄</div><div class="feat-title">AI result import</div><div class="feat-desc">Upload your university result PDF or image — AI extracts courses, units, and scores automatically.</div></div>
     <div class="feat-card"><div class="feat-icon">📊</div><div class="feat-title">Smart calculator</div><div class="feat-desc">Supports 4.0 and 5.0 scales, PDF import, per-semester GPA tracking, and classification.</div></div>
   </div>
-
   <footer class="land-footer">
     <div class="land-footer-left">
       <div class="land-logo" style="font-size:1rem;">
@@ -314,7 +313,7 @@ tr:last-child td{border-bottom:none;}
   </footer>
 </div>
 
-<!-- ══ REG MODAL ══ -->
+<!-- REG MODAL -->
 <div class="modal-backdrop hidden" id="regModal">
   <div class="modal">
     <button class="modal-close" onclick="closeRegModal()">✕ Close</button>
@@ -379,7 +378,7 @@ tr:last-child td{border-bottom:none;}
   </div>
 </div>
 
-<!-- ══ IMPORT RESULT MODAL ══ -->
+<!-- IMPORT RESULT MODAL -->
 <div class="import-modal-backdrop hidden" id="importModal">
   <div class="import-modal">
     <div class="import-modal-header">
@@ -388,8 +387,6 @@ tr:last-child td{border-bottom:none;}
       <button class="import-modal-close" onclick="closeImportModal()">✕ Close</button>
     </div>
     <div class="import-modal-body">
-
-      <!-- Upload zone -->
       <div class="upload-zone" id="uploadZone" onclick="document.getElementById('resultFileInput').click()" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
         <input type="file" id="resultFileInput" accept=".pdf,.png,.jpg,.jpeg,.webp" onchange="handleFileSelect(event)">
         <div class="upload-icon">📂</div>
@@ -402,23 +399,17 @@ tr:last-child td{border-bottom:none;}
           <span class="format-badge">WEBP</span>
         </div>
       </div>
-
-      <!-- AI parsing progress -->
       <div class="parse-progress" id="parseProgress">
         <div class="parse-spinner">⚙️</div>
         <div style="font-size:15px;font-weight:600;" id="parseStatusTitle">Reading your result…</div>
         <div class="parse-status" id="parseStatusMsg">Sending to AI for extraction</div>
         <div class="parse-detail" id="parseDetail"></div>
       </div>
-
-      <!-- Semester target selector -->
       <div class="sem-select-row" id="semSelectRow" style="display:none;">
         <label>Add to semester:</label>
         <select id="semTargetSelect"></select>
         <button class="btn btn-ghost btn-sm" onclick="createNewSemForImport()">+ New</button>
       </div>
-
-      <!-- Preview of parsed courses -->
       <div class="parse-preview" id="parsePreview">
         <div class="parse-preview-head">
           <div>
@@ -429,11 +420,7 @@ tr:last-child td{border-bottom:none;}
         </div>
         <div class="table-wrap">
           <table>
-            <thead>
-              <tr>
-                <th>Code</th><th>Title</th><th>Units</th><th>Score</th><th>Grade</th>
-              </tr>
-            </thead>
+            <thead><tr><th>Code</th><th>Title</th><th>Units</th><th>Score</th><th>Grade</th></tr></thead>
             <tbody id="previewTbody"></tbody>
           </table>
         </div>
@@ -443,12 +430,11 @@ tr:last-child td{border-bottom:none;}
           <button class="btn btn-primary" id="confirmImportBtn" onclick="confirmImport()">✓ Add to Calculator</button>
         </div>
       </div>
-
     </div>
   </div>
 </div>
 
-<!-- ══ APP SCREEN ══ -->
+<!-- APP SCREEN -->
 <div id="appScreen" class="screen">
   <header>
     <div class="logo"><div class="logo-icon">🎓</div><span>Kilogba</span></div>
@@ -552,15 +538,6 @@ tr:last-child td{border-bottom:none;}
             <div class="field" style="max-width:340px"><label>Kilogba Contract Address</label><input id="contractInput" type="text" placeholder="0x..." oninput="S.contractAddress=this.value;save()"></div>
           </div>
           <p class="info-text">Deploy <strong>Kilogba.sol</strong> on Botchain (chain ID 968) and paste the address above.</p>
-          <hr style="border:none;border-top:1px solid var(--border);margin:16px 0;">
-          <div class="field" style="max-width:480px">
-            <label>Anthropic API Key <span style="font-weight:400;color:var(--fg3);text-transform:none;letter-spacing:0;">(required for PDF result import)</span></label>
-            <div style="position:relative;">
-              <input id="apiKeyInput" type="password" placeholder="sk-ant-..." oninput="S.apiKey=this.value;save()" autocomplete="off" style="padding-right:72px;">
-              <button onclick="toggleApiKeyVis()" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--fg3);cursor:pointer;font-size:12px;font-family:inherit;padding:2px 6px;" id="apiKeyToggle">Show</button>
-            </div>
-            <span class="hint">Stored locally in your browser only. Get one at <a href="https://console.anthropic.com/keys" target="_blank" rel="noopener" style="color:var(--accent);">console.anthropic.com</a></span>
-          </div>
         </div></div>
       </div>
       <div class="chain-section">
@@ -617,13 +594,17 @@ tr:last-child td{border-bottom:none;}
 <script>
 'use strict';
 
+// ── GEMINI CONFIG ─────────────────────────────────────────────────────
+const GEMINI_KEY = 'AIzaSyCT-K37Qz6AHSXOcM-a7AWSn7bkXRnJ174';
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_KEY}`;
+
+// ── STATE ─────────────────────────────────────────────────────────────
 const S={
   scale:'5',semesters:[],nextId:1,
   rpcUrl:'https://rpc.bohr.life',contractAddress:'0xBeA4df5587B07B92C9a7861c49CA2E80b7443B83',
   studentName:'Student',matricNo:'',institution:'',
   provider:null,signer:null,address:null,chainId:null,
   registered:false,
-  apiKey:'',
 };
 const BOTCHAIN_ID=968;
 const ABI=[
@@ -637,7 +618,7 @@ const ABI=[
   'function isRegistered(address student) external view returns (bool)',
 ];
 
-// ── GRADE LOGIC ──
+// ── GRADE LOGIC ───────────────────────────────────────────────────────
 function getGradeInfo(score,scale){
   const s=Number(score);
   if(isNaN(s)||score===''||score===null)return{grade:'—',points:null,color:'var(--fg3)'};
@@ -714,23 +695,19 @@ function populateSemSelect(){
   sel.innerHTML='';
   S.semesters.forEach(sem=>{
     const o=document.createElement('option');
-    o.value=sem.id;
-    o.textContent=sem.name;
-    sel.appendChild(o);
+    o.value=sem.id;o.textContent=sem.name;sel.appendChild(o);
   });
   if(!S.semesters.length){
     const o=document.createElement('option');o.value='new';o.textContent='Create new semester';sel.appendChild(o);
   }
 }
 function createNewSemForImport(){
-  addSemester();
-  populateSemSelect();
+  addSemester();populateSemSelect();
   const sel=document.getElementById('semTargetSelect');
   sel.value=S.semesters[S.semesters.length-1].id;
   toast('New semester created');
 }
 
-// Drag & drop
 function handleDragOver(e){e.preventDefault();document.getElementById('uploadZone').classList.add('dragover');}
 function handleDragLeave(e){document.getElementById('uploadZone').classList.remove('dragover');}
 function handleDrop(e){
@@ -750,7 +727,6 @@ async function processResultFile(file){
     toast('Unsupported file type. Use PDF, PNG, JPG, or WEBP.');return;
   }
 
-  // Show progress
   document.getElementById('uploadZone').style.display='none';
   document.getElementById('parseProgress').classList.add('show');
   document.getElementById('parsePreview').classList.remove('show');
@@ -758,19 +734,10 @@ async function processResultFile(file){
   setParseStatus('Reading file…','Converting to base64','');
 
   try{
-    // Convert to base64
     const base64=await fileToBase64(file);
-    const mediaType=file.type==='application/pdf'?'application/pdf':(file.type||'image/jpeg');
+    const mimeType=file.type||'image/jpeg';
 
     setParseStatus('Sending to AI…','Extracting courses from your result slip','This may take 10–20 seconds');
-
-    // Determine content block type
-    let contentBlock;
-    if(mediaType==='application/pdf'){
-      contentBlock={type:'document',source:{type:'base64',media_type:'application/pdf',data:base64}};
-    }else{
-      contentBlock={type:'image',source:{type:'base64',media_type:mediaType,data:base64}};
-    }
 
     const prompt=`You are an academic records parser. Extract ALL courses from this university result slip / transcript.
 
@@ -792,46 +759,60 @@ Rules:
 - If a field is not shown, use null
 - grade should be the letter grade shown (A, B, C, D, E, F) or null if not shown`;
 
-    if(!S.apiKey){
-      document.getElementById('parseProgress').classList.remove('show');
-      document.getElementById('uploadZone').style.display='';
-      toast('⚠️ Add your Anthropic API key in On-Chain → Configuration first');
-      showTab('chain',document.querySelector('.tab-bar').children[2]);
-      document.getElementById('apiKeyInput')?.focus();
-      return;
+    // Build Gemini inline data part
+    const inlinePart={inlineData:{mimeType:mimeType,data:base64}};
+
+        // Try models in order, fall back if busy
+    const GEMINI_MODELS = [
+  'gemini-3.6-flash',
+  'gemini-3.5-flash-lite',
+  'gemini-3.1-pro',
+];
+
+    let response, lastErr;
+    for(const model of GEMINI_MODELS){
+      const url=`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_KEY}`;
+      try{
+        response = await fetch(url,{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({contents:[{parts:[inlinePart,{text:prompt}]}]})
+        });
+        if(response.status===503||response.status===429){
+          // busy — try next model
+          lastErr=`${model} unavailable (${response.status})`;
+          response=null;
+          continue;
+        }
+        if(!response.ok){
+          const err=await response.json().catch(()=>({}));
+          throw new Error(err.error?.message||`Gemini API error ${response.status}`);
+        }
+        break; // success
+      }catch(e){
+        if(e.message.includes('unavailable')||e.message.includes('503')||e.message.includes('429')){
+          lastErr=e.message;response=null;continue;
+        }
+        throw e;
+      }
     }
-    const response=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{
-        'Content-Type':'application/json',
-        'x-api-key':S.apiKey,
-        'anthropic-version':'2023-06-01',
-        'anthropic-dangerous-direct-browser-access':'true',
-      },
-      body:JSON.stringify({
-        model:'claude-sonnet-4-6',
-        max_tokens:2000,
-        messages:[{role:'user',content:[contentBlock,{type:'text',text:prompt}]}]
-      })
-    });
+    if(!response) throw new Error(`All models busy. Last error: ${lastErr}`);
 
     if(!response.ok){
       const err=await response.json().catch(()=>({}));
-      throw new Error(err.error?.message||`API error ${response.status}`);
+      throw new Error(err.error?.message||`Gemini API error ${response.status}`);
     }
 
     setParseStatus('Parsing response…','Almost done','');
     const data=await response.json();
-    const raw=data.content?.find(b=>b.type==='text')?.text||'';
+    const raw=data.candidates?.[0]?.content?.parts?.[0]?.text||'';
 
     // Extract JSON from response
     let parsed;
     try{
-      // Strip markdown fences if present
       const clean=raw.replace(/```json\s*/g,'').replace(/```\s*/g,'').trim();
       parsed=JSON.parse(clean);
     }catch(e){
-      // Try to find JSON object in response
       const match=raw.match(/\{[\s\S]*\}/);
       if(!match)throw new Error('Could not parse AI response. Try a clearer image.');
       parsed=JSON.parse(match[0]);
@@ -860,7 +841,7 @@ Rules:
   }catch(e){
     document.getElementById('parseProgress').classList.remove('show');
     document.getElementById('uploadZone').style.display='';
-    toast('❌ '+( e.message||'Failed to parse result'));
+    toast('❌ '+(e.message||'Failed to parse result'));
     console.error(e);
   }
 }
@@ -886,7 +867,6 @@ function showParsePreview(){
   document.getElementById('semSelectRow').style.display='flex';
   populateSemSelect();
 
-  // Header
   document.getElementById('previewTitle').textContent=_parsedMeta.semester||'Extracted Courses';
   const st=_parsedMeta.student;
   const metaParts=[];
@@ -896,7 +876,6 @@ function showParsePreview(){
   document.getElementById('previewMeta').textContent=metaParts.join(' · ')||'';
   document.getElementById('previewGPA').textContent=_parsedMeta.cgpa?`CGPA ${_parsedMeta.cgpa}`:'';
 
-  // Table
   const tbody=document.getElementById('previewTbody');
   tbody.innerHTML=_parsedCourses.map(c=>{
     const gi=getGradeInfo(c.score,S.scale);
@@ -919,26 +898,24 @@ function confirmImport(){
   let semId=parseInt(document.getElementById('semTargetSelect').value);
   let sem=S.semesters.find(s=>s.id===semId);
 
-  // Create new semester if none exists or "new" selected
-  if(!sem){
+  // If selected semester already has courses, create a new one instead
+  if(!sem||sem.courses.length>0){
     addSemester();
     sem=S.semesters[S.semesters.length-1];
     semId=sem.id;
   }
 
-  // Use parsed semester name if it's a generic name
-  if(_parsedMeta.semester&&(sem.name.match(/^Semester \d+$/)||sem.name.match(/^\d+L (Harmattan|Rain)$/))){
+  // Use parsed semester name
+  if(_parsedMeta.semester){
     sem.name=_parsedMeta.semester.slice(0,50);
   }
 
-  // Merge courses
   sem.courses.push(..._parsedCourses.map(c=>({
     id:c.id,code:c.code,title:c.title,units:c.units,score:c.score
   })));
 
   save();
 
-  // Auto-fill student info if not set and parsed data has it
   if(_parsedMeta.student){
     const st=_parsedMeta.student;
     if(st.name&&S.studentName==='Student'){S.studentName=st.name;save();}
@@ -949,16 +926,13 @@ function confirmImport(){
   toast(`✓ Added ${_parsedCourses.length} courses to "${sem.name}"`);
   closeImportModal();
 
-  // Switch to calculator tab and render
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.getElementById('tab-calc').classList.add('active');
   document.querySelector('.tab-bar').children[1].classList.add('active');
-  renderCalc();
-  updateDashboard();
+  renderCalc();updateDashboard();
 }
-
-// ── LANDING / REG MODAL ──
+// ── LANDING / REG MODAL ───────────────────────────────────────────────
 function openRegModal(mode){
   document.getElementById('regModal').classList.remove('hidden');
   if(mode==='login'&&S.address){goStep(1);}else{goStep(0);}
@@ -1053,12 +1027,11 @@ function enterApp(){
   document.getElementById('appScreen').classList.add('active');
   if(!S.semesters.length)addSemester();
   else renderCalc();
-  updateDashboard();
-  updateWalletUI();
+  updateDashboard();updateWalletUI();
   setTimeout(()=>updateDashboard(),120);
 }
 
-// ── DASHBOARD ──
+// ── DASHBOARD ─────────────────────────────────────────────────────────
 function updateDashboard(){
   const{cgpa,units}=calcCGPA();
   const cls=classify(cgpa,S.scale);
@@ -1130,7 +1103,7 @@ function updateIdentityDisplay(){
   </div></div>`;
 }
 
-// ── CALCULATOR ──
+// ── CALCULATOR ────────────────────────────────────────────────────────
 function renderCalc(){renderSemesters();renderSummary();updateDashboard();}
 function renderSemesters(){
   const el=document.getElementById('semestersContainer');if(!el)return;
@@ -1200,17 +1173,15 @@ function updateGPAs(){
   renderSummary();updateDashboard();refreshHash();
 }
 
-// Open import modal pre-selecting a specific semester
 function openImportModalForSem(semId){
   openImportModal();
-  // Pre-select this semester after modal opens
   setTimeout(()=>{
     const sel=document.getElementById('semTargetSelect');
     if(sel)sel.value=semId;
   },50);
 }
 
-// ── ACTIONS ──
+// ── ACTIONS ───────────────────────────────────────────────────────────
 function addSemester(){
   const names=['100L Harmattan','100L Rain','200L Harmattan','200L Rain','300L Harmattan','300L Rain','400L Harmattan','400L Rain'];
   const name=names[S.semesters.length]||`Semester ${S.semesters.length+1}`;
@@ -1238,7 +1209,7 @@ function setScale(v){
   save();updateGPAs();
 }
 
-// ── CSV ──
+// ── CSV ───────────────────────────────────────────────────────────────
 function parseCSV(text){
   const lines=text.trim().split(/\r?\n/).filter(l=>l.trim());const courses=[];
   for(let i=0;i<lines.length;i++){
@@ -1263,9 +1234,14 @@ function handleGlobalCSV(e){
   reader.readAsText(file);e.target.value='';
 }
 
-// ── PERSISTENCE ──
+// ── PERSISTENCE ───────────────────────────────────────────────────────
 function save(){
-  try{localStorage.setItem('Kilogba2',JSON.stringify({scale:S.scale,semesters:S.semesters,nextId:S.nextId,rpcUrl:S.rpcUrl,contractAddress:S.contractAddress,studentName:S.studentName,matricNo:S.matricNo,institution:S.institution,registered:S.registered,apiKey:S.apiKey}));}catch(_){}
+  try{localStorage.setItem('Kilogba2',JSON.stringify({
+    scale:S.scale,semesters:S.semesters,nextId:S.nextId,
+    rpcUrl:S.rpcUrl,contractAddress:S.contractAddress,
+    studentName:S.studentName,matricNo:S.matricNo,institution:S.institution,
+    registered:S.registered
+  }));}catch(_){}
 }
 function load(){
   try{
@@ -1278,11 +1254,10 @@ function load(){
     if(d.matricNo)S.matricNo=d.matricNo;
     if(d.institution)S.institution=d.institution;
     if(d.registered)S.registered=d.registered;
-    if(d.apiKey)S.apiKey=d.apiKey;
   }catch(_){}
 }
 
-// ── HASH ──
+// ── HASH ──────────────────────────────────────────────────────────────
 function buildPayload(){
   const{cgpa,units}=calcCGPA();const cls=classify(cgpa,S.scale);
   return{student:S.address,name:S.studentName,matricNo:S.matricNo,institution:S.institution,scale:S.scale,cgpa:cgpa!==null?Number(cgpa.toFixed(4)):null,units,classification:cls.label,
@@ -1306,7 +1281,7 @@ function copyHash(){
   navigator.clipboard.writeText(h).then(()=>toast('Hash copied!')).catch(()=>{toast('Select and copy the hash above');});
 }
 
-// ── WALLET ──
+// ── WALLET ────────────────────────────────────────────────────────────
 async function connectWallet(){
   if(!window.ethereum){toast('MetaMask or a Web3 wallet is required');return;}
   try{
@@ -1360,7 +1335,7 @@ async function addBotchain(){
   }catch(e){toast(e.message||'Failed');}
 }
 
-// ── BLOCKCHAIN ──
+// ── BLOCKCHAIN ────────────────────────────────────────────────────────
 async function storeOnChain(){
   if(!S.signer){toast('Connect wallet first');return;}
   if(S.chainId!==BOTCHAIN_ID){toast('Switch to Botchain first');return;}
@@ -1410,7 +1385,7 @@ async function verifyRecord(){
   }catch(e){out.innerHTML=`<div class="verify-result verify-fail">${esc(e.message)}</div>`;}
 }
 
-// ── UI HELPERS ──
+// ── UI HELPERS ────────────────────────────────────────────────────────
 let toastTimer;
 function toast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),3500);}
 function showTab(name,btn){
@@ -1421,51 +1396,35 @@ function showTab(name,btn){
   if(name==='dash'){updateDashboard();}
 }
 
-// ── INIT ──
+// ── INIT ──────────────────────────────────────────────────────────────
 load();
 document.getElementById('scaleBtn5').classList.toggle('active',S.scale==='5');
 document.getElementById('scaleBtn4').classList.toggle('active',S.scale==='4');
 if(S.rpcUrl)document.getElementById('rpcInput').value=S.rpcUrl;
 if(S.contractAddress)document.getElementById('contractInput').value=S.contractAddress;
-if(S.apiKey)document.getElementById('apiKeyInput').value=S.apiKey;
 
-// Route on load: try to silently reconnect saved wallet session
 (async()=>{
   let walletConnected=false;
   if(window.ethereum){
     try{
-      // eth_accounts does NOT prompt — returns already-authorised accounts only
       const accounts=await window.ethereum.request({method:'eth_accounts'});
       if(accounts&&accounts.length){
         const provider=new ethers.providers.Web3Provider(window.ethereum,'any');
-        S.provider=provider;
-        S.signer=provider.getSigner();
-        S.address=accounts[0];
-        const network=await provider.getNetwork();
-        S.chainId=network.chainId;
-        // Check on-chain registration
+        S.provider=provider;S.signer=provider.getSigner();S.address=accounts[0];
+        const network=await provider.getNetwork();S.chainId=network.chainId;
         if(S.contractAddress){
           try{
             const contract=new ethers.Contract(S.contractAddress,ABI,S.provider);
             const isReg=await contract.isRegistered(S.address);
-            if(isReg){
-              const[name,matric,inst]=await contract.getStudent(S.address);
-              S.studentName=name;S.matricNo=matric;S.institution=inst;S.registered=true;save();
-            }
+            if(isReg){const[name,matric,inst]=await contract.getStudent(S.address);S.studentName=name;S.matricNo=matric;S.institution=inst;S.registered=true;save();}
           }catch(_){}
         }
-        walletConnected=true;
-        updateWalletUI();
+        walletConnected=true;updateWalletUI();
       }
     }catch(_){}
   }
-  if(walletConnected){
-    // Wallet already authorised — go straight to dashboard
-    enterApp();
-  } else {
-    // No wallet — stay on landing
-    document.getElementById('landingScreen').classList.add('active');
-  }
+  if(walletConnected){enterApp();}
+  else{document.getElementById('landingScreen').classList.add('active');}
   setTimeout(()=>updateDashboard(),150);
 })();
 </script>
