@@ -537,7 +537,7 @@ tr:last-child td{border-bottom:none;}
             <div class="field" style="flex:1"><label>Botchain RPC URL</label><input id="rpcInput" type="text" placeholder="https://rpc.botchain.example" oninput="S.rpcUrl=this.value;save()"></div>
             <div class="field" style="max-width:340px"><label>Kilogba Contract Address</label><input id="contractInput" type="text" placeholder="0x..." oninput="S.contractAddress=this.value;save()"></div>
           </div>
-          <p class="info-text">Deploy <strong>Kilogba.sol</strong> on Botchain (chain ID 968) and paste the address above.</p>
+          <p class="info-text">Deploy <strong>Kilogba.sol</strong> on Botchain (chain ID 677) and paste the address above.</p>
         </div></div>
       </div>
       <div class="chain-section">
@@ -601,12 +601,12 @@ const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemi
 // ── STATE ─────────────────────────────────────────────────────────────
 const S={
   scale:'5',semesters:[],nextId:1,
-  rpcUrl:'https://rpc.bohr.life',contractAddress:'0xBeA4df5587B07B92C9a7861c49CA2E80b7443B83',
+  rpcUrl:'https://rpc.botchain.ai',contractAddress:'0x810D33C1730fDa23649eeFf6962f06A457ad8cc2',
   studentName:'Student',matricNo:'',institution:'',
   provider:null,signer:null,address:null,chainId:null,
   registered:false,
 };
-const BOTCHAIN_ID=968;
+const BOTCHAIN_ID=677;
 const ABI=[
   'function register(string calldata name,string calldata matricNo,string calldata institution) external',
   'function storeRecord(bytes32 dataHash,string calldata label) external',
